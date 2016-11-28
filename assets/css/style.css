@@ -1,0 +1,221 @@
+﻿/* GENERAL STYLES */
+body {
+  /*padding-top: 20px; /*Required FOR FIXED TOP NAVBAR*/
+  font-family: 'Amatic SC', cursive;
+  font-size: 29px;
+  overflow:hidden;
+}
+
+		#intro { 
+			background: url(../../img/intro.jpg) 50% 0 fixed; 
+			height: auto;  
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: re1ative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 75px 0;
+		}
+		
+		#home { 
+			  color: #777;
+  background: #0a0a0a;
+  background-image: -webkit-linear-gradient(#0f0f0f 1px, transparent 1px), -webkit-linear-gradient(left, #0f0f0f 1px, transparent 1px);
+  background-image: linear-gradient(#0f0f0f 1px, transparent 1px), linear-gradient(to right, #0f0f0f 1px, transparent 1px);
+  background-size: 3.33333vmin 3.33333vmin;
+  overflow:hidden;
+			height: auto;  
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 50px 0;
+		}
+		
+		#about { 
+			background: url(../../img/about.jpg) 50% 0 fixed; 
+			height: auto;
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 200px 0;
+		    color: #fff;
+		}
+
+h1 {
+	font-size:61px;
+}
+
+h2 {
+	font-size:55px;
+}
+
+h3 {
+	font-size:39px;
+}
+
+h4 {
+	font-size:23px;
+}
+
+h5 {
+	font-size:29px;
+}
+
+h6 {
+	font-size:27px;
+}
+
+.badge {
+    font-size: 27px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    font-size: 18px;
+}
+
+.images {
+	float:left;
+}
+
+.caption {
+	font-size:29px;
+	float:left;
+}
+
+.comments{
+float:left;
+}
+
+
+
+
+/* FOR CHANGING COLOR OF ACTIVE CATEGORY */
+.caegories a.active {
+    background-color: #000;
+}
+
+/* FOR TRANSITION BEAUTIFULLY */
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+/* JUST FOR BOTTOM SPACE */
+#portfolio-div h5 {
+    padding-bottom: 30px;
+}
+
+.lupus {
+	margin-top: 20%;
+}
+
+.social-media {
+    font-size: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #777;
+    text-decoration: none;
+    outline: 0 none;
+    padding: 0 10px;
+}
+
+.social-media a + .tooltip > .tooltip-inner {
+    background-color: transparent;
+    color: #00B796;
+    font-size: 16px;
+}
+.social-media a + .tooltip > .tooltip-arrow {
+    border-bottom-color: transparent;
+}
+
+/*Bootstrap tooltips Customized*/
+
+.social-media a:hover {
+    color: #00B796;
+}
+
+
+
+/*Portfolio items */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-content-wrap,
+.portfolio-title,
+.portfolio-categories {
+  transition: all 0.4s ease-in-out;
+  white-space: nowrap;
+  webkit-font-smoothing: antialiased;
+  -khtml-font-smoothing: antialiased;
+  -apple-font-smoothing: antialiased;
+}
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(252,252,252,0.7);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+.portfolio-content-wrap {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.portfolio-content-wrap::after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  width: 0;
+  vertical-align: middle;
+  font-size: 0;
+}
+.potfolio-content {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+.portfolio-categories,
+.portfolio-title {
+  opacity: 0;
+}
+.portfolio-categories {
+  transform: translateY(8px);
+}
+.portfolio-categories a {
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.portfolio-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  transform: translateY(-8px);
+}
+.portfolio-item:hover .portfolio-categories,
+.portfolio-item:hover .portfolio-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-item:hover .portfolio-img::before {
+  opacity: 1;
+}
